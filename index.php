@@ -33,7 +33,7 @@ include_once 'header.php';
             <h2 class="text-2xl md:text-3xl text-bold font-mono">An amazing website by Faiz and Yudhit</h2>
         </div>
     </section>
-    <section id="about" class="scroll bg-white h-screen py-4 text-center">
+    <section id="about" class="scroll bg-white h-auto py-4 text-center">
         <h1 class="text-bold text-slate-800 text-2xl font-bold md:text-4xl">About us</h1>
         <div class="container m-auto px-6 text-gray-600 md:px-12 xl:px-6">
             <div class="space-y-6 md:space-y-0 md:flex md:gap-6 lg:items-center lg:gap-12">
@@ -42,13 +42,13 @@ include_once 'header.php';
                 </div>
                 <div class="md:7/12 lg:w-6/12">
                     <h2 class="text-2xl text-slate-800 font-bold md:text-4xl">GabutForum is carried out by passionate developers</h2>
-                    <p class="mt-6 text-gray-600">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum omnis voluptatem accusantium nemo perspiciatis delectus atque autem! Voluptatum tenetur beatae unde aperiam, repellat expedita consequatur! Officiis id consequatur atque doloremque!</p>
+                    <p class="mt-6 text-gray-600">"Jadi gini, ..." kami gabut kali tapi pengen ngasah skill web development, maka terbentuk lah <span class="text-pink-700">Gabut</span>Code Studio</a> yang berawal dari sebuah kegabutan haqiqi mahasiswa TI semester 3, menjadi sebuah ide yang dieksekusi layaknya project beneran. udah itu aja dlu</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="offer" class="bg-blue-100 h-screen">
+    <section id="offer" class="bg-blue-100 h-auto">
         <div class="scroll mx-2 mb-2 py-4 list-none text-center ">
             <h2 class="text-2xl text-slate-800 font-bold md:text-4xl">Layanan Kami</h2>
             <ul class="px-10 py-10">
@@ -154,7 +154,7 @@ include_once 'header.php';
                             <input autocomplete="off" type="tel" name="tel" id="tel" placeholder="Telephone Number" class="w-100 mt-2 py-3 px-3 rounded-lg bg-white border border-gray-400 dark:border-gray-700 text-gray-800 font-semibold focus:border-indigo-500 focus:outline-none">
                         </div>
 
-                        <button type="submit" class="md:w-32 bg-indigo-600 hover:bg-blue-dark text-white font-bold py-3 px-6 rounded-lg mt-3 hover:bg-indigo-500 transition ease-in-out duration-300">
+                        <button onclick="alert('Fitur ini Dalam Pengembangan')" type="submit" class="md:w-32 bg-indigo-600 hover:bg-blue-dark text-white font-bold py-3 px-6 rounded-lg mt-3 hover:bg-indigo-500 transition ease-in-out duration-300">
                             Submit
                         </button>
                     </form>

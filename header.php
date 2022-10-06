@@ -21,7 +21,7 @@
           </li>
         </ul>
       </div>
-      <button class="md:block hidden border border-gray-300 text-white py-2 p-5 rounded-2xl ml-5">
+      <button onclick="alert('Fitur ini Dalam Pengembangan')" class="md:block hidden border border-gray-300 hover:border-none duration-300 hover:duration-300 hover:bg-indigo-500 text-white py-2 p-5 rounded-2xl ml-5">
         Login
       </button>
     </nav>
