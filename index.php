@@ -17,8 +17,8 @@ include_once 'header.php';
 <body>
 
     <section class="grid place-items-center h-screen md:h-screen bg-slate-900">
-        <img class="hidden md:block md:h-screen w-screen z-0 brightness-50" src="img/pc.jpg" alt="">
-        <div class="bg-black bg-opacity-50 absolute z-10 w-3/4 px-4 py-2 text-white text-center">
+        <img class="hidden md:block h-screen w-screen z-0 brightness-50" src="img/pc.jpg" alt="">
+        <div class="bg-black bg-opacity-50 absolute z-10 w-3/4 px-4 py-4 md:py-4 text-white text-center">
             <h1 class="ml1">
                 <span class="text-wrapper">
                     <span class="line line1"></span>
