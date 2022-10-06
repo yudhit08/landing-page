@@ -13,9 +13,7 @@ include_once 'header.php';
 </head>
 <body>
     <img class="h-auto w-screen" src="img/pc.jpg" alt="">
-    <div class="bg-blue-100 h-screen ">
-        <h1 class="">Landing Page</h1>
-    </div>
+    
     
 </body>
 </html>
