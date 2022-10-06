@@ -29,7 +29,7 @@ include_once 'header.php';
             <br>
             <h1 class="text-3xl md:text-4xl text-bold font-mono">Hi, This is our site !</h1>
             <h2 class="text-2xl md:text-3xl text-bold font-mono text-teal-300">#projectGabut</h2><br>
-            <h2 class="text-2xl md:text-3xl text-bold font-mono">An amazing website by Yudith and Faiz</h2>
+            <h2 class="text-2xl md:text-3xl text-bold font-mono">An amazing website by Faiz and Yudhit</h2>
         </div>
     </section>
     <section class="bg-white h-screen py-4 text-center">
