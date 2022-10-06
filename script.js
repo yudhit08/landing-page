@@ -33,6 +33,7 @@ anime
         delay: 1000,
     });
 
+/* Scroll effect */
 const scrollElements = document.querySelectorAll(".scroll");
 
 const handleScrollAnimation = () => {
@@ -50,3 +51,8 @@ const handleScrollAnimation = () => {
 window.addEventListener('scroll', () => {
     handleScrollAnimation();
 })
+
+/* Smooth scroll */			
+var scroll = new SmoothScroll('a[href*="#"]',{
+	speed: 1000
+});

@@ -11,10 +11,10 @@
       <div class="hidden md:block">
         <ul class="flex space-x-7">
           <li>
-            <a href="#offer" class="text-md font-semibold hover:text-slate-300 text-slate-600">About</a>
+            <a href="#about" class="text-md font-semibold hover:text-slate-300 text-slate-600">About</a>
           </li>
           <li>
-            <a href="#about" class="text-md font-semibold hover:text-slate-300 text-slate-600">Offer</a>
+            <a href="#offer" class="text-md font-semibold hover:text-slate-300 text-slate-600">Offer</a>
           </li>
           <li>
             <a href="#contact" class="text-md font-semibold hover:text-slate-300 text-slate-600">Contact</a>
