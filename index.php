@@ -10,6 +10,7 @@ include_once 'header.php';
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
     <title>Landing Page</title>
 </head>
 
@@ -18,7 +19,15 @@ include_once 'header.php';
     <section class="grid place-items-center h-screen md:h-screen bg-slate-900">
         <img class="hidden md:block md:h-screen w-screen z-0 brightness-50" src="img/pc.jpg" alt="">
         <div class="bg-black bg-opacity-50 absolute z-10 w-3/4 px-4 py-2 text-white text-center">
-            <h1 class="text-3xl md:text-4xl text-bold font-mono">Hi, Welcome to our site !</h1>
+            <h1 class="ml1">
+                <span class="text-wrapper">
+                    <span class="line line1"></span>
+                    <span class="letters">WELCOME</span>
+                    <span class="line line2"></span>
+                </span>
+            </h1>
+            <br>
+            <h1 class="text-3xl md:text-4xl text-bold font-mono">Hi, This is our site !</h1>
             <h2 class="text-2xl md:text-3xl text-bold font-mono text-teal-300">#projectGabut</h2><br>
             <h2 class="text-2xl md:text-3xl text-bold font-mono">An amazing website by Yudith and Faiz</h2>
         </div>
@@ -42,7 +51,7 @@ include_once 'header.php';
     <?php
     include_once 'footer.php';
     ?>
-
+    <script type="text/javascript" src="script.js"></script>
 </body>
 
 </html>
