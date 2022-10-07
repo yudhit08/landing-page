@@ -2,8 +2,8 @@
   <header class=" w-full">
     <nav class="px-5 py-3 flex justify-between md:justify-around items-center content-center bg-slate-900">
       <div class="flex items-center">
-        <a href="/"><img class="w-8 h-8 m-2" src="img/BeetcodeStudio.png" alt=""></a>
-        <a href="/" class="text-lg font-bold text-slate-300">
+        <a href="index.php"><img class="w-8 h-8 m-2" src="img/BeetcodeStudio.png" alt=""></a>
+        <a href="index.php" class="text-lg font-bold text-slate-300">
           <span class="text-pink-700">Gabut</span>Code Studio</a>
       </div>
 

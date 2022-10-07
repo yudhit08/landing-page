@@ -55,10 +55,30 @@ include_once 'header.php';
                 <a class="" href="">
                     <li class="bg-white rounded-lg inline-block w-60 h-80 max-h-80 max-w-xs mx-4 mb-7 px-6 pt-10 pb-14 text-center items-center hover:drop-shadow-xl duration-300 hover:duration-300">
                         <div class="mb-2 flex items-center justify-center">
-                            <img src="img/laptop.svg" class="border-4 border-slate-900 rounded-full max-w-[100%] w-24">
+                            <img src="img/blog.svg" class="border-4 border-slate-900 rounded-full max-w-[100%] w-24">
                         </div>
 
-                        <h3 class="text-slate-800">Hosting</h3>
+                        <h3 class="text-slate-800 font-bold">Blog</h3>
+                        <p class="text-slate-800 text-sm mb-6">Dapatkan informasi terkini tentang teknologi disini !</p>
+                    </li>
+                </a>
+                <a class="" href="">
+                    <li class="bg-white rounded-lg inline-block w-60 h-80 max-h-80 max-w-xs mx-4 mb-7 px-6 pt-10 pb-14 text-center items-center hover:drop-shadow-xl duration-300 hover:duration-300">
+                        <div class="mb-2 flex items-center justify-center">
+                            <img src="img/rakit-pc.svg" class="border-4 border-slate-900 rounded-full max-w-[100%] w-24">
+                        </div>
+
+                        <h3 class="text-slate-800 font-bold">Rakit PC</h3>
+                        <p class="text-slate-800 text-sm mb-6">Bingung mau rakit pc low budget? sini biar kita bantuin.</p>
+                    </li>
+                </a>
+                <a class="" href="">
+                    <li class="bg-white rounded-lg inline-block w-60 h-80 max-h-80 max-w-xs mx-4 mb-7 px-6 pt-10 pb-14 text-center items-center hover:drop-shadow-xl duration-300 hover:duration-300">
+                        <div class="mb-2 flex items-center justify-center">
+                            <img src="img/cloud-network.svg" class="border-4 border-slate-900 rounded-full max-w-[100%] w-24">
+                        </div>
+
+                        <h3 class="text-slate-800 font-bold">Hosting</h3>
                         <p class="text-slate-800 text-sm mb-6">Untuk website berskala kecil hingga menengah.</p>
                     </li>
                 </a>
@@ -68,28 +88,8 @@ include_once 'header.php';
                             <img src="img/laptop.svg" class="border-4 border-slate-900 rounded-full max-w-[100%] w-24">
                         </div>
 
-                        <h3 class="text-slate-800">Hosting</h3>
-                        <p class="text-slate-800 text-sm mb-6">Untuk website berskala kecil hingga menengah.</p>
-                    </li>
-                </a>
-                <a class="" href="">
-                    <li class="bg-white rounded-lg inline-block w-60 h-80 max-h-80 max-w-xs mx-4 mb-7 px-6 pt-10 pb-14 text-center items-center hover:drop-shadow-xl duration-300 hover:duration-300">
-                        <div class="mb-2 flex items-center justify-center">
-                            <img src="img/laptop.svg" class="border-4 border-slate-900 rounded-full max-w-[100%] w-24">
-                        </div>
-
-                        <h3 class="text-slate-800">Hosting</h3>
-                        <p class="text-slate-800 text-sm mb-6">Untuk website berskala kecil hingga menengah.</p>
-                    </li>
-                </a>
-                <a class="" href="">
-                    <li class="bg-white rounded-lg inline-block w-60 h-80 max-h-80 max-w-xs mx-4 mb-7 px-6 pt-10 pb-14 text-center items-center hover:drop-shadow-xl duration-300 hover:duration-300">
-                        <div class="mb-2 flex items-center justify-center">
-                            <img src="img/laptop.svg" class="border-4 border-slate-900 rounded-full max-w-[100%] w-24">
-                        </div>
-
-                        <h3 class="text-slate-800">Hosting</h3>
-                        <p class="text-slate-800 text-sm mb-6">Untuk website berskala kecil hingga menengah.</p>
+                        <h3 class="text-slate-800 font-bold">Realtime Chat</h3>
+                        <p class="text-slate-800 text-sm mb-6">Skuy nongki dengan global chat kami :D</p>
                     </li>
                 </a>
             </ul>
