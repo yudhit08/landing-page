@@ -59,7 +59,7 @@ include_once 'header.php';
             <h2 class="text-2xl md:text-3xl text-bold font-mono">An amazing website by Faiz and Yudhit</h2>
         </div>
     </section>
-    <section id="about" class="scroll bg-white h-auto py-4 text-center">
+    <section id="about" class="scroll bg-white h-auto py-4 text-center md:pt-20">
         <h1 class="text-bold text-slate-800 text-2xl font-bold md:text-4xl">About us</h1>
         <div class="container m-auto px-6 text-gray-600 md:px-12 xl:px-6">
             <div class="space-y-6 md:space-y-0 md:flex md:gap-6 lg:items-center lg:gap-12">
@@ -74,7 +74,7 @@ include_once 'header.php';
         </div>
     </section>
 
-    <section id="offer" class="bg-blue-100 h-auto">
+    <section id="offer" class="bg-blue-100 h-auto md:pt-20">
         <div class="scroll mx-2 mb-2 py-4 list-none text-center ">
             <h2 class="text-2xl text-slate-800 font-bold md:text-4xl">Layanan Kami</h2>
             <ul class="px-10 py-10">
