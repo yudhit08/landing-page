@@ -23,7 +23,7 @@ include_once 'header.php';
             document.getElementById('contact-form').addEventListener('submit', (event) => {
                 event.preventDefault();
                 // these IDs from the previous steps
-                emailjs.sendForm('service_iq4l41j', 'template_d7kyyhs', event.target, 'EJ-uRBzOKaoqnK-Ve')
+                emailjs.sendForm('service_vvful8t', 'template_ih5exbc', event.target, 'H2FlZXszbDFyuEjoF')
                     .then(
                         result => {
                             swal({
