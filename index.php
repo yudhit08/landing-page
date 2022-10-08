@@ -30,10 +30,14 @@ include_once 'header.php';
                                 title: "Success",
                                 text: "Your message has been sent!",
                                 icon: "success",
+                                
                             });;
                         }, error => {
                             console.log(error.text);
                         });
+                document.getElementById("name").value = "";
+                document.getElementById("email").value = "";
+                document.getElementById("message").value = "";
             });
         }
     </script>
