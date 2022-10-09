@@ -1,5 +1,5 @@
 # larang user akses directory selain index di root
-Options -Indexes
+Options ALL -Indexes
 
 # hilangkan extensi php dari url
 RewriteEngine On
@@ -11,3 +11,19 @@ RewriteRule ^([^.]+)$ $1.php [NC,L]
 # custom error page
 ErrorDocument 403 /landing-page/error/403.html
 ErrorDocument 404 /landing-page/error/404.html
+
+# Prevent image hotlinking
+RewriteEngine on 
+RewriteCond %{HTTP_REFERER} !^$ 
+RewriteCond %{HTTP_REFERER} !^http(s)?://(www.)?example.com [NC] 
+RewriteRule .(jpg|jpeg|png|gif)$ – [NC,F,L]
+
+# Prevent X-XSS, X-Frame-Option, and MIME Sniffing
+Header set X-XSS-Protection "1; mode=block"
+Header always append X-Frame-Options SAMEORIGIN
+Header set X-Content-Type-Options nosniff
+
+# One month for most static assets caching
+<filesMatch ".(css|jpg|jpeg|png|gif|js|ico)$">
+Header set Cache-Control "max-age=2628000, public"
+</filesMatch>
