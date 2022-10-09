@@ -37,22 +37,44 @@ anime
 const scrollElements = document.querySelectorAll(".scroll");
 
 const handleScrollAnimation = () => {
-    let visible = 200
+    let visible = 200;
     scrollElements.forEach((el) => {
-        let distance = el.getBoundingClientRect().top
+        let distance = el.getBoundingClientRect().top;
         if (distance < window.innerHeight - visible) {
-            el.classList.add('scrolled');
+            el.classList.add("scrolled");
         } else {
-            el.classList.remove('scrolled');
+            el.classList.remove("scrolled");
         }
     });
 };
 
-window.addEventListener('scroll', () => {
+window.addEventListener("scroll", () => {
     handleScrollAnimation();
-})
-
-/* Smooth scroll */			
-var scroll = new SmoothScroll('a[href*="#"]',{
-	speed: 1000
+    scrollFunction();
 });
+
+/* Smooth scroll */
+var scroll = new SmoothScroll('a[href*="#"]', {
+    speed: 1000,
+});
+
+// Get the button
+const mybutton = document.getElementById("btn-back-to-top");
+const refToTop = document.getElementById('about')
+
+function scrollFunction() {
+    if (
+        refToTop.getBoundingClientRect().top < 20 
+    ) {
+        mybutton.style.display = "block";
+    } else {
+        mybutton.style.display = "none";
+    }
+}
+// When the user clicks on the button, scroll to the top of the document
+mybutton.addEventListener("click", backToTop);
+
+function backToTop() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}

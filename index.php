@@ -63,6 +63,13 @@ include_once 'header.php';
             <h2 class="text-2xl md:text-3xl text-bold font-mono">An amazing website by Faiz and Yudhit</h2>
         </div>
     </section>
+
+    <button type="button" data-mdb-ripple="true" data-mdb-ripple-color="light" class="inline-block p-3 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded-full shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-500 ease-in-out bottom-5 right-5 hidden fixed z-50" id="btn-back-to-top">
+        <svg aria-hidden="true" focusable="false" data-prefix="fas" class="w-4 h-4" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+            <path fill="currentColor" d="M34.9 289.5l-22.2-22.2c-9.4-9.4-9.4-24.6 0-33.9L207 39c9.4-9.4 24.6-9.4 33.9 0l194.3 194.3c9.4 9.4 9.4 24.6 0 33.9L413 289.4c-9.5 9.5-25 9.3-34.3-.4L264 168.6V456c0 13.3-10.7 24-24 24h-32c-13.3 0-24-10.7-24-24V168.6L69.2 289.1c-9.3 9.8-24.8 10-34.3.4z"></path>
+        </svg>
+    </button>
+
     <section id="about" class="scroll bg-white h-auto py-4 text-center md:pt-20">
         <h1 class="text-bold text-slate-800 text-2xl font-bold md:text-4xl">About us</h1>
         <div class="container m-auto px-6 text-gray-600 md:px-12 xl:px-6">
@@ -126,7 +133,7 @@ include_once 'header.php';
         </div>
     </section>
 
-    <section id="contact" class="relative flex items-top justify-center min-h-screen bg-white sm:items-center sm:pt-0">
+    <section id="contact" class="scroll relative flex items-top justify-center min-h-screen bg-white sm:items-center sm:pt-0">
         <div class="max-w-6xl mx-auto sm:px-6 lg:px-8">
             <div class="mt-8 overflow-hidden">
                 <div class="grid grid-cols-1 md:grid-cols-2">
