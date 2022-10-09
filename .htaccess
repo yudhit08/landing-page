@@ -1,0 +1,13 @@
+# larang user akses directory selain index di root
+Options -Indexes
+
+# hilangkan extensi php dari url
+RewriteEngine On
+RewriteCond %{THE_REQUEST} /([^.]+).php [NC]
+RewriteRule ^ /%1 [NC,L,R]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^([^.]+)$ $1.php [NC,L]
+
+# custom error page
+ErrorDocument 403 /landing-page/error/403.html
+ErrorDocument 404 /landing-page/error/404.html
