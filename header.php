@@ -21,7 +21,7 @@
           </li>
         </ul>
       </div>
-      <a href="login.php">
+      <a href="register.php">
       <button class="md:block hidden border border-gray-300 hover:border-none duration-300 hover:duration-300 hover:bg-indigo-500 text-white py-2 p-5 rounded-2xl ml-5">
         Login
       </button>
