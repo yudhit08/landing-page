@@ -1,6 +1,8 @@
+<script src="https://cdn.tailwindcss.com"></script>
 <?php
 $name = $_POST["name"];
 $email = $_POST["email"];
+
 
 if ($_POST['email']) {
     include "dbh.inc.php";
@@ -40,23 +42,23 @@ if ($_POST['email']) {
                 });
             }
         </script>
-        <form method="POST" id="link-form" name="linkForm" class="p-6 flex flex-col justify-center">
+        <form method="POST" id="link-form" name="linkForm" class="h-screen flex flex-col justify-center">
             <div class="flex flex-col">
-                <label for="name" class="hidden">Full Name</label>
-                <input autocomplete="off" value="<?php echo htmlspecialchars($name);?>" type="name" name="name" id="name" placeholder="Full Name" class="w-100 mt-2 py-3 px-3 rounded-lg bg-white border border-gray-400 dark:border-gray-700 text-gray-800 font-semibold focus:border-indigo-500 focus:outline-none" required>
+                <input readonly autocomplete="off" value="<?php echo htmlspecialchars($name);?>" type="name" name="name" id="name" placeholder="Full Name" class="w-100 mt-2 py-3 px-3 rounded-lg bg-white border border-gray-400 dark:border-gray-700 text-gray-800 font-semibold focus:border-indigo-500 focus:outline-none" required>
             </div>
 
             <div class="flex flex-col mt-2">
-                <label for="email" class="hidden">Email</label>
-                <input autocomplete="off" value="<?php echo htmlspecialchars($email);?>" type="email" name="email" id="email" placeholder="Email" class="w-100 mt-2 py-3 px-3 rounded-lg bg-white border border-gray-400 dark:border-gray-700 text-gray-800 font-semibold focus:border-indigo-500 focus:outline-none" required>
+                <input readonly autocomplete="off" value="<?php echo htmlspecialchars($email);?>" type="email" name="email" id="email" placeholder="Email" class="hidden w-100 mt-2 py-3 px-3 rounded-lg bg-white border border-gray-400 dark:border-gray-700 text-gray-800 font-semibold focus:border-indigo-500 focus:outline-none" required>
             </div>
 
             <div class="flex flex-col mt-2">
-                <input autocomplete="off" value="<?php echo $link;?>" type="name" name="message" id="message" placeholder="Message" class="w-100 mt-2 py-3 px-3 rounded-lg bg-white border border-gray-400 dark:border-gray-700 text-gray-800 font-semibold focus:border-indigo-500 focus:outline-none" required></input>
+                <input readonly autocomplete="off" value="<?php echo $link;?>" type="name" name="message" id="message" placeholder="Message" class="hidden w-100 mt-2 py-3 px-3 rounded-lg bg-white border border-gray-400 dark:border-gray-700 text-gray-800 font-semibold focus:border-indigo-500 focus:outline-none" required></input>
             </div>
-
-            <button type="submit" class="md:w-32 bg-indigo-600 hover:bg-blue-dark text-white font-bold py-3 px-6 rounded-lg mt-3 hover:bg-indigo-500 transition ease-in-out duration-300">
-                Click to send verification link
+            <div class="absolute z-10 w-screen h-screen bg-blue-400">
+                Haven't received the activation link yet ?
+            </div>
+            <button type="submit" class="z-20 md:w-auto bg-indigo-600 hover:bg-blue-dark text-white font-bold py-3 px-6 mt-3 hover:bg-indigo-500 transition ease-in-out duration-300">
+                Click to re-send verification link
             </button>
         </form>
 <?php
@@ -97,6 +99,8 @@ if ($_POST['email']) {
         header("Location: http://localhost/landing-page/index.php");
         /* ---------------------------------- */
         
+    }else{
+        echo "email already in use";
     }
     
 }
