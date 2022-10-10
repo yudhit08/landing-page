@@ -1,5 +1,5 @@
 # larang user akses directory selain index di root
-Options ALL -Indexes
+Options -Indexes
 
 # hilangkan extensi php dari url
 RewriteEngine On

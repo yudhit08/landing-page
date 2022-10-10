@@ -16,7 +16,7 @@ include_once 'header.php';
     <script type="text/javascript">
         (function() {
             emailjs.init('H2FlZXszbDFyuEjoF');
-        })();
+        });
     </script>
     <script type="text/javascript">
         window.onload = () => {
@@ -30,7 +30,7 @@ include_once 'header.php';
                                 title: "Success",
                                 text: "Your message has been sent!",
                                 icon: "success",
-                                
+
                             });;
                         }, error => {
                             console.log(error.text);
@@ -46,7 +46,13 @@ include_once 'header.php';
 </head>
 
 <body>
-
+    <?php
+    if ($_GET["status"] == "verif-berhasil") {
+        echo '<script language="javascript">';
+        echo 'alert("Selamat, Akun anda telah diverifikasi")';
+        echo '</script>';
+    }
+    ?>
     <section id="cta-banner" class="grid place-items-center h-screen md:h-screen bg-slate-900">
         <img class="hidden md:block h-screen w-screen z-0 brightness-50" src="img/pc.jpg" alt="">
         <div class="bg-black bg-opacity-50 absolute z-10 w-3/4 px-4 py-4 md:py-4 text-white text-center">
@@ -133,8 +139,8 @@ include_once 'header.php';
         </div>
     </section>
 
-    <section id="contact" class="scroll relative flex items-top justify-center min-h-screen bg-white sm:items-center sm:pt-0">
-        <div class="max-w-6xl mx-auto sm:px-6 lg:px-8">
+    <section id="contact" class="relative flex items-top justify-center min-h-screen bg-white sm:items-center sm:pt-0">
+        <div class="scroll max-w-6xl mx-auto sm:px-6 lg:px-8">
             <div class="mt-8 overflow-hidden">
                 <div class="grid grid-cols-1 md:grid-cols-2">
                     <div class="p-6 mr-2 bg-gray-100 border-gray-400 dark:border-gray-700 sm:rounded-lg">

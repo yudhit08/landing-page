@@ -12,21 +12,26 @@
 <body>
     <?php
     if ($_GET['key'] && $_GET['token']) {
-        include "dbh.php";
+        include "dbh.inc.php";
         $email = $_GET['key'];
         $token = $_GET['token'];
+        $sql = "SELECT * FROM users WHERE email LIKE '%$email%' OR email_verification_link LIKE '%$token%'";
         $query = mysqli_query(
-            $conn,
-            "SELECT * FROM `users` WHERE `email_verification_link`='" . $token . "' and `email`='" . $email . "';"
+            $conn, $sql
+            
         );
         $d = date('Y-m-d H:i:s');
         if (mysqli_num_rows($query) > 0) {
             $row = mysqli_fetch_array($query);
             if ($row['email_verified_at'] == NULL) {
                 mysqli_query($conn, "UPDATE users set email_verified_at ='" . $d . "' WHERE email='" . $email . "'");
+                mysqli_query($conn, "UPDATE users set status =' 1 ' WHERE email='" . $email . "'");
                 $msg = "Congratulations! Your email has been verified.";
+                header("Location: http://localhost/landing-page/index.php?status=verif-berhasil");
             } else {
                 $msg = "You have already verified your account with us";
+                sleep(5);
+                header("Location: http://localhost/landing-page/index.php");
             }
         } else {
             $msg = "This email has been not registered with us";
